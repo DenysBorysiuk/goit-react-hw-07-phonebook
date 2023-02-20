@@ -20,8 +20,8 @@ export const ContactList = () => {
       {contacts.length === 0 ? (
         <Notice>Contacts list is empty!</Notice>
       ) : (
-        visibleContacts.map(({ id, name, number }) => (
-          <ContactListItem key={id} id={id} name={name} number={number} />
+        visibleContacts.map(({ id, name, phone }) => (
+          <ContactListItem key={id} id={id} name={name} phone={phone} />
         ))
       )}
     </List>
